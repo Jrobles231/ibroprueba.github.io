@@ -40,6 +40,7 @@ body {
         padding-left: 47%;
         gap: 150px;
         z-index: 1001;
+        color: #005961;
     }
 
     .logo {
@@ -93,9 +94,6 @@ body {
         width: 100%;
         background-color:#ffffff;
 
-
-
-        
     }
 
     .nav-menu ul {
@@ -170,7 +168,7 @@ body {
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-        margin-left: 15%;
+        margin-left: 12%;
     }
 
     .boton-whatsapp:hover {
