@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Clearfa5';
+    src: url('fonts/clearfa5.ttf') format('truetype');
+
+}
+
+
+
 body {
     margin: 0;
-    font-family: "Montserrat", "Open Sans";
+    font-family: "Montserrat", "Open Sans","clearfa5";
 }
 
 
@@ -32,6 +40,7 @@ body {
         padding-left: 47%;
         gap: 150px;
         z-index: 1001;
+        color: #005961;
     }
 
     .logo {
@@ -85,9 +94,6 @@ body {
         width: 100%;
         background-color:#ffffff;
 
-
-
-        
     }
 
     .nav-menu ul {
@@ -125,7 +131,7 @@ body {
     }
 
     .banner_servicios {
-        height: 500px;
+        height: 535px;
         padding-top: 90px;
 
     }
@@ -154,7 +160,7 @@ body {
 
     .boton-whatsapp {
         display: inline-block;
-        background-color: #25D366;
+        background-color: #0a8080;
         color: white;
         padding: 12px 20px;
         border-radius: 25px;
@@ -162,11 +168,11 @@ body {
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-        margin-left: 15%;
+        margin-left: 12%;
     }
 
     .boton-whatsapp:hover {
-        background-color: #1ebe5d;
+        background-color: #0a8080;
     }
 
     .boton-whatsapp:visited {
@@ -202,9 +208,7 @@ body {
     .nuestros_servicios p {
         text-align: center;
         margin-bottom: 10%;
-    }
-    .tarjetas_servicios {
- 
+        padding-right: 1%;
     }
 
     .tarjetas_servicios img {
@@ -219,13 +223,15 @@ body {
 
     .tarjetas_servicios div {
         background-color:none;
-        width: 90%;
-        margin-left: 10px;
+        width: 92%;
+        margin-left: 12px;
         height: auto;
-        border-radius: 7px;
-        border: 10px solid #ffffff;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        border: 6px solid #ffffff;
+        box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
         margin-bottom: 30px;
+        border-right: 5px solid #005961;
+        
     }
 
     .tarjetas_servicios h3 {
@@ -270,7 +276,9 @@ body {
     .razones p{
         margin-left: 6%;
         margin-top: 1%;
+        text-align: start;
         color: white;
+        margin-right: 6%;
     }
 
     .razon {
