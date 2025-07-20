@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Clearfa5';
+    src: url('fonts/clearfa5.ttf') format('truetype');
+
+}
+
+
+
 body {
     margin: 0;
-    font-family: "Montserrat", "Open Sans";
+    font-family: "Montserrat", "Open Sans","clearfa5";
 }
 
 
@@ -125,7 +133,7 @@ body {
     }
 
     .banner_servicios {
-        height: 500px;
+        height: 535px;
         padding-top: 90px;
 
     }
@@ -154,7 +162,7 @@ body {
 
     .boton-whatsapp {
         display: inline-block;
-        background-color: #25D366;
+        background-color: #0a8080;
         color: white;
         padding: 12px 20px;
         border-radius: 25px;
@@ -166,7 +174,7 @@ body {
     }
 
     .boton-whatsapp:hover {
-        background-color: #1ebe5d;
+        background-color: #0a8080;
     }
 
     .boton-whatsapp:visited {
@@ -204,9 +212,6 @@ body {
         margin-bottom: 10%;
         padding-right: 1%;
     }
-    .tarjetas_servicios {
- 
-    }
 
     .tarjetas_servicios img {
 
@@ -221,7 +226,7 @@ body {
     .tarjetas_servicios div {
         background-color:none;
         width: 92%;
-        margin-left: 15px;
+        margin-left: 12px;
         height: auto;
         border-radius: 8px;
         border: 6px solid #ffffff;
@@ -273,7 +278,9 @@ body {
     .razones p{
         margin-left: 6%;
         margin-top: 1%;
+        text-align: start;
         color: white;
+        margin-right: 6%;
     }
 
     .razon {
