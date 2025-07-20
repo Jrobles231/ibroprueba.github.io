@@ -133,6 +133,7 @@ body {
     .banner_servicios {
         height: 535px;
         padding-top: 90px;
+        padding-bottom: 15%;
 
     }
 
@@ -156,6 +157,8 @@ body {
     .banner_servicios p {
         text-align: center;
         color: 	#333333;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .boton-whatsapp {
@@ -168,7 +171,7 @@ body {
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-        margin-left: 12%;
+        margin-left: 15%;
     }
 
     .boton-whatsapp:hover {
