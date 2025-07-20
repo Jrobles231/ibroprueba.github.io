@@ -202,6 +202,7 @@ body {
     .nuestros_servicios p {
         text-align: center;
         margin-bottom: 10%;
+        padding-right: 1%;
     }
     .tarjetas_servicios {
  
@@ -219,13 +220,15 @@ body {
 
     .tarjetas_servicios div {
         background-color:none;
-        width: 90%;
-        margin-left: 10px;
+        width: 92%;
+        margin-left: 15px;
         height: auto;
-        border-radius: 7px;
-        border: 10px solid #ffffff;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        border: 6px solid #ffffff;
+        box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
         margin-bottom: 30px;
+        border-right: 5px solid #005961;
+        
     }
 
     .tarjetas_servicios h3 {
