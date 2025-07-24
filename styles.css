@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: "Montserrat", "Open Sans","clearfa5";
+    background-color: #ffffff;
 }
 
 
@@ -35,12 +36,11 @@ body {
         font-size: 2rem;
         cursor: pointer;
         padding: 10px;
-        background: white;
-        border-bottom: 1px solid #ccc;
+        background: #ffffff;
         padding-left: 47%;
         gap: 150px;
         z-index: 1001;
-        color: #005961;
+        color:#072842;
     }
 
     .logo {
@@ -49,7 +49,7 @@ body {
     }
 
     header {
-        position: fixed;
+        position:;
         width: 100%;
     }
 
@@ -131,51 +131,55 @@ body {
     }
 
     .banner_servicios {
-        height: 535px;
+        height: 410px;
         padding-top: 90px;
         padding-bottom: 15%;
-
     }
 
-    .banner_servicios img {
-        width: 70%;
-        justify-content: center;
-        text-align: center;
-        margin-left: 70px;
-        padding-bottom: 20px;
+    .tarjeta_banner {
+        background-color: #0e528a;
+        width: 92%;
+        margin-left: 12px;
+        height: 99%;
+        border-radius: 18px;
+        border: 6px solid #ffffff;
+        margin-bottom: 30px;
     }
 
+    
 
     .banner_servicios h1 {
-        color:	#333333;
-        text-align: center;
-        font-size:22px;
+        color:	white;
+        text-align:start;
+        font-size:40px;
+        padding-left: 10px;
         
     }
 
     
     .banner_servicios p {
         text-align: center;
-        color: 	#333333;
+        color: white;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .boton-whatsapp {
         display: inline-block;
-        background-color: #0a8080;
+        background-color: #0e528a;
         color: white;
-        padding: 12px 20px;
-        border-radius: 25px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border: 1px solid white;
         text-decoration: none;
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .boton-whatsapp:hover {
-        background-color: #0a8080;
+        background-color: #0078D7;
     }
 
     .boton-whatsapp:visited {
@@ -190,7 +194,7 @@ body {
     .propuesta-valor {
         text-align: center;
         padding: 50px 20px;
-        background-color: #f5f5f5; /* color suave de fondo */
+        background-color: #f5f5f5;
         border-top: 2px solid #e0e0e0;
         border-bottom: 2px solid #e0e0e0;
     }
@@ -203,25 +207,60 @@ body {
 
     .propuesta-valor p {
         font-size: 1.2rem;
-        color: #555;
+        color: #082e4d;
         max-width: 800px;
         margin: 0 auto;
     }
 
-    .nuestros_servicios p {
+    .p_servicios p {
         text-align: center;
-        margin-bottom: 10%;
-        padding-right: 1%;
+        margin-bottom: 2%;
+        padding-left: 3%;
     }
 
-    .tarjetas_servicios img {
+    .nuestros_servicios {
+        color: #213b55;
+        margin-bottom: 3%;
+    }
 
-        width: 20%;
-        height: 1%;
-        padding-top: 10px;
-        padding-bottom: 1px;
-        padding-left: 40%;
+    .p_servicios {
+        text-align: center;
+    }
+    
+    .p_servicios a {
+        color: #2967a5;
+        font-weight: bold;
+    }
+
+    .p_servicios a:hover {
+        color: #2967a5;
+    }
+
+    
+
+    .tarjetas_servicios img {
+        width: 320px;
+        height: 250px;
+        padding-top: 25px;
+        padding-bottom: 3px;
+        padding-left: 6%;
         
+    }
+
+
+    .servicios_anchor {
+        text-align: justify;
+        padding-left: 6%;
+        font-weight: bold;
+
+    }
+
+    .servicios_anchor:hover {
+        color: #2967a5;
+    }
+
+    .servicios_anchor:visited {
+        color: #2967a5;
     }
 
     .tarjetas_servicios div {
@@ -229,27 +268,22 @@ body {
         width: 92%;
         margin-left: 12px;
         height: auto;
-        border-radius: 8px;
-        border: 6px solid #ffffff;
-        box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
-        margin-bottom: 30px;
-        border-right: 5px solid #005961;
+        margin-bottom: 5px;
         
     }
 
     .tarjetas_servicios h3 {
         font-size: 18px;
-        text-align: center;
+        text-align: left;
+        padding-left: 6%;
     }
     
     .tarjetas_servicios p {
-        text-align: center;
+        text-align: justify;
+        padding-left: 6%;
+        margin-bottom: 20px;
     }
-    .tarjetas_servicios a {
-        display: block;
-        width: fit-content;
-        margin: 0 auto;
-    }
+
     .quienes_somos {
         text-align: center;
     }
@@ -257,18 +291,53 @@ body {
         margin-left: 10px;
     }
 
+    .nosotros {
+        background-color: #ececec;
+        text-align: center;
+        padding: 1px 5px;
+        border-bottom: 5px solid #e0e0e0;
+        border: rgb(219, 219, 219);
+        border-radius: 5%;
+        box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 10%;
+        margin-left: 7%;
+        width: 85%;
+        color: #213b55;
+        margin-bottom: 80px;
+    }
+
+    .equipo img {
+        width: 150px;
+        height: 150px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        padding-left: 6%;
+        border-radius: 50%;
+        
+    }
+    
+
+    .equipo div {
+        background-color:none;
+        width: 92%;
+        margin-left: 12px;
+        height: auto;
+        margin-bottom: 5px;
+        
+    }
+    
     .porque_elegirnos {
-        background-color: #005961;
-        border-top: 2px solid #e0e0e0;
+        background-color: #072842;
         border-bottom: 2px solid #e0e0e0;
         color: white;
         padding-bottom: 20px;
+        padding-top: 2px;
     }
 
     .porque_elegirnos h2{
         text-align: center;
         margin-top: 10%;
-        color: white;
+
         font-weight: bold;
     }
 
@@ -280,7 +349,7 @@ body {
         margin-left: 6%;
         margin-top: 1%;
         text-align: start;
-        color: white;
+
         margin-right: 6%;
     }
 
@@ -294,9 +363,11 @@ body {
 
     .seccion_formulario {
         text-align: center;
-        padding: 1px 20px;
-        background-color: white;
+        padding: 1px 20px 20px;
+        background-color: #f8f8f8;
         margin-bottom: 35px;
+        color: #0e2029;
+
     }
 
     .formulario {
@@ -318,12 +389,12 @@ body {
         border-radius: 8px;
         display: block;
         box-sizing: border-box;
-        transition: border-color 0.3s;
+        transition:  0.3s;
     }
 
     .formulario input:focus,
     .formulario textarea:focus {
-        border-color: #0a8080;
+        border-color: #0078D7;
         outline: none;
     }
 
@@ -331,7 +402,7 @@ body {
         margin-top: 1%;
         padding: 12px 24px;
         color: white;
-        background-color: #0a8080;
+        background-color: #095d77;
         border: none;
         border-radius: 8px;
         font-size: 18px;
@@ -340,26 +411,29 @@ body {
     }
 
     .formulario button:hover {
-        background-color: #066666;
+        background-color: #0078D7;
     }
 
     .seccion-preguntas {
         padding: 30px 20px;
-        background-color: #f9f9f9;
+        background-color: #ececec;
+        padding-bottom: 50px;
     }
 
     .seccion-preguntas h2 {
         text-align: center;
         font-size: 2rem;
         margin-bottom: 30px;
+        color: black;
+
     }
 
     .pregunta {
         max-width: 800px;
         margin: 0 auto 25px;
         padding: 20px;
-        border-left: 4px solid #005961;
-        background-color: #ffffff;
+        border-left: 10px solid #072842;
+        background-color: white;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         border-radius: 8px;
     }
@@ -378,6 +452,7 @@ body {
         background-color: #ffffff;
         margin-bottom: 0;
         padding-bottom: 20px;
+        color: #000000;
     }
 
     .pie_logo {
