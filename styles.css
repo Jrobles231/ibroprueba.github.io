@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Clearfa5';
-    src: url('fonts/clearfa5.ttf') format('truetype');
-
-}
 
 
 
@@ -49,7 +44,6 @@ body {
     }
 
     header {
-        position:;
         width: 100%;
     }
 
@@ -244,7 +238,12 @@ body {
         padding-top: 25px;
         padding-bottom: 3px;
         padding-left: 6%;
-        
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+
+    .tarjetas_servicios img:hover {
+        transform: scale(1.05);
     }
 
 
@@ -265,10 +264,11 @@ body {
 
     .tarjetas_servicios div {
         background-color:none;
-        width: 92%;
+        width: 93%;
         margin-left: 12px;
         height: auto;
         margin-bottom: 5px;
+        overflow: hidden;
         
     }
 
@@ -304,6 +304,14 @@ body {
         width: 85%;
         color: #213b55;
         margin-bottom: 80px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out
+    }
+
+    .nosotros.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .equipo img {
@@ -394,7 +402,7 @@ body {
 
     .formulario input:focus,
     .formulario textarea:focus {
-        border-color: #0078D7;
+        border-color: black;
         outline: none;
     }
 
@@ -436,15 +444,37 @@ body {
         background-color: white;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         border-radius: 8px;
+
     }
 
     .pregunta h4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 10px;
         color: #333;
+        cursor: pointer;
+
+    }
+
+    .pregunta h4 i {
+        transition: transform 0.3s ease;
+    }
+
+    .pregunta h4.activo i {
+        transform: rotate(180deg);
     }
 
     .pregunta p {
         color: #555;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease;
+    }
+
+    .pregunta h4.activo + p {
+        max-height: 500px;
+        opacity: 1;
     }
 
     .pie {

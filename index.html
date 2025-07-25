@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -43,7 +44,7 @@
             <h1>Soluciones Especializadas <br> en Gestión de Personas</h1>
             <p>Entregamos soluciones a medida para mejorar la gestión de personas de tu empresa</p>
             
-            <a href="https://wa.me/56912345678" target="_blank" class="boton-whatsapp">
+            <a href="https://wa.me/56912345678" target="_blank" class="boton-whatsapp" id="boton_wsp">
                 💬 Escríbenos por WhatsApp
             </a>
             </div>
@@ -114,7 +115,7 @@
         </div>
 
 
-       <div class="nosotros">
+       <div id="nosotros_id" class="nosotros">
 
             <h2>Equipo Directivo</h2>
 
@@ -184,24 +185,41 @@
         <h2>PREGUNTAS FRECUENTES</h2>
 
             <div class="pregunta">
-                <h4>¿Qué incluye el servicio de administración de personal?</h4>
+                <h4>¿Qué incluye el servicio de administración de personal? <i class="fas fa-chevron-down"></i></h4>
                 <p>Incluye desde el ingreso hasta el egreso del trabajador: contratos, anexos, vacaciones, licencias, asistencia y desvinculaciones, asegurando cumplimiento normativo.</p>
             </div>
 
             <div class="pregunta">
-                <h4>¿Qué diferencia hay entre outsourcing y servicios transitorios?</h4>
+                <h4>¿Qué diferencia hay entre outsourcing y servicios transitorios? <i class="fas fa-chevron-down"></i></h4>
                 <p>Outsourcing implica delegar funciones específicas por un periodo más prolongado. Servicios transitorios son por tiempo limitado y según la legislación vigente.</p>
             </div>
 
             <div class="pregunta">
-                <h4>¿Pueden asesorarnos en temas como la Ley Karin?</h4>
+                <h4>¿Pueden asesorarnos en temas como la Ley Karin? <i class="fas fa-chevron-down"></i></h4>
                 <p>Sí, entregamos asesoría actualizada sobre el Código del Trabajo, Ley Karin, reglamentos internos y manejo de conflictos laborales.</p>
             </div>
 
             <div class="pregunta">
-                <h4>¿Realizan auditorías laborales para verificar cumplimiento?</h4>
+                <h4>¿Realizan auditorías laborales para verificar cumplimiento? <i class="fas fa-chevron-down"></i></h4>
                 <p>Sí, revisamos documentación, procesos y prácticas laborales internas para detectar riesgos y proponer mejoras claras.</p>
             </div>
+
+            <div class="pregunta">
+                <h4>¿Cuáles son los beneficios de externalizar la administración de personal? <i class="fas fa-chevron-down"></i></h4>
+                <p>Permite ahorrar tiempo y recursos, reduce errores administrativos, asegura cumplimiento normativo y permite a la empresa enfocarse en su actividad principal.</p>
+            </div>
+
+            <div class="pregunta">
+                <h4>¿Qué tipo de empresas pueden contratar estos servicios? <i class="fas fa-chevron-down"></i></h4>
+                <p>Cualquier tipo de empresa, desde pymes hasta grandes corporaciones, que requieran apoyo en la gestión de su personal y procesos laborales.</p>
+            </div>
+
+
+            <div class="pregunta">
+                <h4>¿Cómo se maneja la confidencialidad de la información del personal? <i class="fas fa-chevron-down"></i></h4>
+                <p>Firmamos acuerdos de confidencialidad y seguimos protocolos de seguridad para proteger todos los datos sensibles de los trabajadores y de la empresa.</p>
+            </div>
+
         </section>
 
         <div class="seccion_formulario">
@@ -266,16 +284,7 @@
             
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
