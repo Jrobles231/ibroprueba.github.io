@@ -14,6 +14,7 @@ cambioColor.addEventListener("mouseover", function() {
 });
 
 
+
 window.addEventListener("scroll", function() {
     const nosotros = document.getElementById("nosotros_id");
     const posicion = nosotros.getBoundingClientRect();

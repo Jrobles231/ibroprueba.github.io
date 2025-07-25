@@ -13,16 +13,16 @@ body {
 @media (max-width: 600px) {
 
     .a {
-        color: #0a8080;
+        color: #0e528a;
         text-decoration: none;
         font-weight: bold;
     }
 
     a:hover {
-        color: #0a8080;
+        color: #0e528a;
     }
     a:visited {
-        color: #0a8080;
+        color: #0e528a;
     }
 
 
@@ -32,9 +32,7 @@ body {
         cursor: pointer;
         padding: 10px;
         background: #ffffff;
-        padding-left: 47%;
-        gap: 150px;
-        z-index: 1001;
+        padding-left: 88%;
         color:#072842;
     }
 
@@ -49,10 +47,7 @@ body {
 
     .nav {
         position:fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-
+        z-index: 9999;
     }
 
 
@@ -87,6 +82,7 @@ body {
         font-size: 20px;
         width: 100%;
         background-color:#ffffff;
+        z-index: 9999;
 
     }
 
@@ -169,7 +165,10 @@ body {
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-        margin-left: 10%;
+        
+        width: auto;         
+        max-width: 80%;       
+        margin-left: calc(39% - 100px);
     }
 
     .boton-whatsapp:hover {
@@ -233,17 +232,12 @@ body {
     
 
     .tarjetas_servicios img {
-        width: 320px;
+        width: auto;
         height: 250px;
         padding-top: 25px;
         padding-bottom: 3px;
         padding-left: 6%;
         transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-
-    .tarjetas_servicios img:hover {
-        transform: scale(1.05);
     }
 
 
@@ -300,10 +294,10 @@ body {
         border-radius: 5%;
         box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
         margin-top: 10%;
-        margin-left: 7%;
+        margin-left: 8%;
         width: 85%;
         color: #213b55;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         opacity: 0;
         transform: translateY(50px);
         transition: opacity 0.6s ease-out, transform 0.6s ease-out
@@ -321,7 +315,6 @@ body {
         padding-bottom: 1px;
         padding-left: 6%;
         border-radius: 50%;
-        
     }
     
 
@@ -397,7 +390,7 @@ body {
         border-radius: 8px;
         display: block;
         box-sizing: border-box;
-        transition:  0.3s;
+        transition:  0.7s;
     }
 
     .formulario input:focus,
