@@ -1,56 +1,68 @@
 
-
-
 body {
     margin: 0;
-    font-family: "Montserrat", "Open Sans","clearfa5";
+    font-family: "sans-serif";
     background-color: #ffffff;
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
 
 
-
-@media (max-width: 600px) {
-
+    .planes_perfectos p{
+        margin: 0;
+        width: 100%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+        background-color:#5c6168;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+    }
+    
     .a {
         color: #0e528a;
         text-decoration: none;
         font-weight: bold;
-    }
+        }
 
     a:hover {
         color: #0e528a;
-    }
+        }
     a:visited {
         color: #0e528a;
-    }
+        }
 
 
-    .hamburger {
-        display: flex;
-        font-size: 2rem;
-        cursor: pointer;
-        padding: 10px;
-        background: #ffffff;
-        padding-left: 88%;
-        color:#072842;
+    header {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+
+        
+
     }
+
 
     .logo {
         font-size: 30px;
 
     }
 
-    header {
-        width: 100%;
-    }
-
     .nav {
-        position:fixed;
+        position: fixed;
         z-index: 9999;
     }
 
-
+    .hamburger{
+        display: flex;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        padding-left: 88%;
+        color:#151e29;
+    }
+    
     .close {
         background: none;
         border: none;
@@ -70,15 +82,27 @@ body {
         display: none;
     }
 
+
+    .nav-menu ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+        
     .nav-menu {
         display:none;
         flex-direction: column;
         text-align: center;
         justify-content: space-between;
         gap: 2rem;
-        height:100%;
+        height:350rem;
         padding: 10px 10px;
-        position:fixed;
+        position:absolute;
         font-size: 20px;
         width: 100%;
         background-color:#ffffff;
@@ -112,6 +136,561 @@ body {
         display: flex;
     }
 
+
+    .banner_servicios {
+            height: 30rem;
+            padding-top: 0;
+            margin-bottom: 0px;
+            padding-bottom: 0;
+            overflow: hidden;
+            display: flex;
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.7);
+
+        }
+
+    .imagen_banner2 {
+            width: 100%;
+            height: 100%;
+            align-items: flex-end;
+            
+            
+            min-width: 300px;
+            max-width: 400px;
+        }
+
+    .tarjeta_banner {
+            color: #000000;
+            width: 52%;
+            margin-left: 3%;
+            margin-top: 2%;
+            
+            height: 300px;
+            
+        }
+        
+
+    .banner_servicios h1 {
+            color:	#213b55;
+          
+            font-size:40px;
+            padding-left: 10%;
+            padding-right: 10px;
+            width: 380px;
+        }
+
+        
+    .banner_servicios p {
+            text-align: start;
+            color: #283a4d;
+            padding-left: 10%;
+            margin-left: 2%;
+            margin-right: 7%;
+            font-size: 20px;
+            width: 230px;
+        }
+
+    .boton-whatsapp {
+            display: flex;
+            background-color: #54b6ce;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-top: 5%;
+            width: 50%;       
+            max-width: 70%;       
+            margin-left: 10%;
+        }
+
+    .boton-whatsapp:hover {
+            background-color: #0078D7;
+        }
+
+    .boton-whatsapp:visited {
+            color: white;
+        }
+        
+
+    .contacto_whatsapp {
+            margin-left: 40%;
+        }
+
+    .propuesta-valor {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f5f5f5;
+            border-top: 2px solid #e0e0e0;
+            border-bottom: 3px solid #e0e0e0;
+        }
+
+    .propuesta-valor h2 {
+            font-size: 30px;
+            color: #213b55;
+            margin-bottom: 15px;
+        }
+
+    .propuesta-valor p {
+            font-size: 1.2rem;
+            color: #082e4d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+    .h2_servicios {
+            text-align: center;
+            margin-bottom: 2%;
+            padding-left: 3%;
+            font-size: 30px;
+    }
+
+    .p_servicios p {
+            text-align: center;
+            margin-bottom: 2%;
+            padding-left: 3%;
+        }
+
+    .nuestros_servicios {
+            color: #213b55;
+
+            display: flex;
+            justify-content: center;
+            max-width: 768px;
+            margin: 50px auto; 
+        }
+
+    .nuestros_servicios h2 {
+            font-size: 30px;
+        }
+
+    .p_servicios {
+            text-align: center;
+        }
+        
+    .p_servicios a {
+            color: #2967a5;
+            font-weight: bold;
+        }
+
+    .p_servicios a:hover {
+            color: #2967a5;
+        }
+
+    .tarjetas_servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+        
+
+    .tarjetas_servicios img {
+            width: auto;
+            height: 100px;
+            padding: 20px 0 10px 0;
+            margin: 0 auto;
+            display: block;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+
+    .servicios_anchor {
+            text-align: left;
+            padding-left: 23%;
+            font-weight: bold;
+
+        }
+
+    .servicios_anchor:hover {
+            color: #2967a5;
+        }
+
+    .servicios_anchor:visited {
+            color: #2967a5;
+        }
+
+
+    .tarjetas_servicios div {
+            background-color: white;
+            width: 270px;
+            padding: 20px;
+            height: auto;
+            border: 5px solid #ffffff;
+            border-radius: 6px;
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+    .tarjetas_servicios h3 {
+            font-size: 18px;
+            text-align: justify;
+            padding-left: 6%;
+        }
+        
+    .tarjetas_servicios p {
+            text-align: justify;
+            padding-left: 6%;
+            margin-bottom: 20px;
+        }
+
+    .quienes_somos {
+            text-align: center;
+        }
+    .quienes_somos img {
+            margin-left: 2px;
+        }
+
+    .nosotros {
+            background-color: #ececec;
+            text-align: center;
+            padding: 1px 5px;
+            border-bottom: 5px solid #e0e0e0;
+            border: rgb(219, 219, 219);
+            border-radius: 5%;
+            box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 12%;
+            margin-left: 15%;
+            width: 70%;
+            color: #213b55;
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 2s ease-out, transform 2s ease-out;
+        }
+
+    .nosotros.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .equipo img {
+            width: 150px;
+            height: 150px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+            padding-left: 6%;
+            border-radius: 50%;
+        }
+        
+
+    .equipo div {
+            background-color:none;
+            width: 92%;
+            margin-left: 15px;
+            height: auto;
+            margin-bottom: 5px;
+            
+        }
+        
+    .porque_elegirnos {
+            background-color: #072842;
+            border-bottom: 2px solid #e0e0e0;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+    .porque_elegirnos h2{
+            text-align: center;
+            margin-top: 2%;
+
+            font-weight: bold;
+        }
+
+    .razones img{
+            width: 7%;
+        }
+
+    .razones p{
+            margin-left: 10%;
+            margin-top: 1%;
+            text-align: start;
+            font-size: 20px;
+            margin-right: 6%;
+            padding-left: 10%;
+        }
+
+    .razon {
+            display: flex;
+            text-align: center;
+            margin-left: 12%;
+            margin-bottom: 0;
+            gap: 10px;
+        }
+
+    .seccion_formulario {
+            text-align: center;
+            padding: 1px 20px 20px;
+            background-color: #f8f8f8;
+            margin-bottom: 35px;
+            color: #0e2029;
+
+        }
+
+    .formulario {
+            background-color: white;
+            margin: 0 auto;
+            padding: 30px 20px;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+    .formulario input,
+    .formulario textarea {
+            width: 90%;
+            margin: 10px auto;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: block;
+            box-sizing: border-box;
+            transition:  0.7s;
+        }
+
+    .formulario input:focus,
+    .formulario textarea:focus {
+            border-color: black;
+            outline: none;
+        }
+
+    .formulario button {
+            margin-top: 1%;
+            padding: 12px 24px;
+            color: white;
+            background-color: #095d77;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+    .formulario button:hover {
+            background-color: #0078D7;
+        }
+
+    .seccion-preguntas {
+            padding: 30px 20px;
+            background-color: #ececec;
+            padding-bottom: 50px;
+        }
+
+    .seccion-preguntas h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: black;
+
+        }
+
+    .pregunta {
+            max-width: 500px;
+            margin: 0 auto 25px;
+            padding: 20px;
+            border-left: 10px solid #072842;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+
+        }
+
+    .pregunta h4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #333;
+            cursor: pointer;
+
+        }
+
+    .pregunta h4 i {
+            transition: transform 0.3s ease;
+        }
+
+    .pregunta h4.activo i {
+            transform: rotate(180deg);
+        }
+
+    .pregunta p {
+            color: #555;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 1s ease, opacity 0.5s ease;
+        }
+
+    .pregunta h4.activo + p {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+    .pie {
+            display: flex;
+            background-color: #ffffff;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            color: #000000;
+        }
+
+    .pie_logo {
+            list-style: none;
+            margin-top: 8%;
+        }
+
+    .pie_redes {
+            list-style: none;
+
+            
+        }
+
+    .pie_redes img {
+            width: 8%;
+        }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .planes_perfectos p{
+        margin: 0;
+        width: 100%;
+        padding-bottom: 5%;
+        padding-top: 3%;
+        background-color:#5c6168;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .a {
+        color: #0e528a;
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+    a:hover {
+        color: #0e528a;
+        }
+    a:visited {
+        color: #0e528a;
+        }
+
+
+    header {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+
+        
+
+    }
+
+
+    .logo {
+        font-size: 30px;
+
+    }
+
+    .nav {
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .hamburger{
+        display: flex;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        padding-left: 88%;
+        color:#151e29;
+    }
+    
+    .close {
+        background: none;
+        border: none;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        cursor: pointer;
+        color: black;
+    }
+
+    .nav-menu:not(.active) .close{
+        display: none;
+    }
+
+    .nav-menu.active ~ .hamburger {
+        display: none;
+    }
+
+
+    .nav-menu ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+        
+    .nav-menu {
+        display:none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        gap: 2rem;
+        height:350rem;
+        padding: 10px 10px;
+        position:absolute;
+        font-size: 20px;
+        width: 100%;
+        background-color:#ffffff;
+        z-index: 9999;
+
+    }
+
+    .nav-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid #eee;
+    }
+    
+    .nav-menu a {
+        text-decoration: none;
+        color: #333;
+        padding: 15px;
+        display: block;
+        transition: background 0.2s;
+    }
+
+    .nav-menu a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
     .nuestros_servicios {
         background-color: #ffffff;
     }
@@ -120,81 +699,90 @@ body {
         text-align: center;
     }
 
-    .banner_servicios {
-        height: 410px;
-        padding-top: 90px;
-        padding-bottom: 15%;
+
+    .imagen_banner2{
+        display: inline-block;
+        width: 90%;
+        height: 400px;
+        margin-top: 120px;
+        margin-left: 0px;
+        transform: translateX(10px);
+        transition: opacity 1s ease-out, transform 0.8s ease-out;
+        animation: aparecer 1s forwards ease-out;
     }
 
     .tarjeta_banner {
-        background-color: #0e528a;
-        width: 92%;
-        margin-left: 12px;
-        height: 99%;
-        border-radius: 18px;
-        border: 6px solid #ffffff;
-        margin-bottom: 30px;
-    }
-
-    
+            color: #000000;
+            width: 52%;
+            margin-left: 3%;
+            margin-top: 2%;
+            
+            height: 300px;
+            
+        }
+        
 
     .banner_servicios h1 {
-        color:	white;
-        text-align:start;
-        font-size:40px;
-        padding-left: 10px;
-        
-    }
+            color:	#213b55;
+          
+            font-size:37px;
+            padding-left: 10%;
+            padding-right: 10px;
+            width: 350px;
+        }
 
-    
+        
     .banner_servicios p {
-        text-align: center;
-        color: white;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+            text-align: start;
+            color: #283a4d;
+            padding-left: 10%;
+            margin-left: 2%;
+            margin-right: 7%;
+            font-size: 20px;
+            width: 230px;
+        }
 
     .boton-whatsapp {
-        display: inline-block;
-        background-color: #0e528a;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 8px;
-        border: 1px solid white;
-        text-decoration: none;
-        font-weight: bold;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
-        
-        width: auto;         
-        max-width: 80%;       
-        margin-left: calc(39% - 100px);
-    }
+            display: flex;
+            background-color: #54b6ce;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-top: 5%;
+            width: 80%;       
+            max-width: 70%;       
+            margin-left: 10%;
+        }
 
     .boton-whatsapp:hover {
-        background-color: #0078D7;
-    }
+            background-color: #0078D7;
+        }
 
     .boton-whatsapp:visited {
-        color: white;
-    }
-    
+            color: white;
+        }
+        
 
     .contacto_whatsapp {
-        margin-left: 40%;
-    }
+            margin-left: 40%;
+        }
+
 
     .propuesta-valor {
         text-align: center;
         padding: 50px 20px;
         background-color: #f5f5f5;
         border-top: 2px solid #e0e0e0;
-        border-bottom: 2px solid #e0e0e0;
+        border-bottom: 3px solid #e0e0e0;
     }
 
     .propuesta-valor h2 {
-        font-size: 2rem;
-        color: #333;
+        font-size: 30px;
+        color: #213b55;
         margin-bottom: 15px;
     }
 
@@ -205,15 +793,25 @@ body {
         margin: 0 auto;
     }
 
+    .h2_servicios {
+        text-align: center;
+        font-size: 30px;
+    }
+    
     .p_servicios p {
         text-align: center;
         margin-bottom: 2%;
-        padding-left: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .nuestros_servicios {
         color: #213b55;
         margin-bottom: 3%;
+    }
+
+    .nuestros_servicios h2 {
+        font-size: 30px;
     }
 
     .p_servicios {
@@ -233,17 +831,17 @@ body {
 
     .tarjetas_servicios img {
         width: auto;
-        height: 250px;
+        height: 100px;
         padding-top: 25px;
         padding-bottom: 3px;
-        padding-left: 6%;
+        padding-left: 38%;
         transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
 
     .servicios_anchor {
-        text-align: justify;
-        padding-left: 6%;
+        text-align: left;
+        padding-left: 23%;
         font-weight: bold;
 
     }
@@ -258,12 +856,15 @@ body {
 
     .tarjetas_servicios div {
         background-color:none;
-        width: 93%;
-        margin-left: 12px;
+        width: 88%;
+        padding-right: 2%;
+        margin-left: 20px;
+        margin-top: 20px;
         height: auto;
-        margin-bottom: 5px;
-        overflow: hidden;
-        
+        margin-bottom: 10px;
+        border: 5px solid #ffffff;
+        border-radius:6px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     }
 
     .tarjetas_servicios h3 {
@@ -293,14 +894,14 @@ body {
         border: rgb(219, 219, 219);
         border-radius: 5%;
         box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
-        margin-top: 10%;
+        margin-top: 12%;
         margin-left: 8%;
         width: 85%;
         color: #213b55;
         margin-bottom: 60px;
         opacity: 0;
         transform: translateY(50px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out
+        transition: opacity 2s ease-out, transform 2s ease-out
     }
 
     .nosotros.visible {

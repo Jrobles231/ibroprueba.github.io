@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de RRHH</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -17,6 +13,11 @@
 
 
 <body>
+
+    <div class="planes_perfectos">
+        <p>Contrata con nosotros planes ajustados a las necesidades de tu empresa</p>
+    </div>
+    
     <header>
         
         <div class="hamburger" id="hamburger">
@@ -27,10 +28,10 @@
         <nav class="nav-menu" id="nav-menu">
             
             <ul>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Portal Empleado</a></li>
+                <li><a href="#">Servicios▾</a></li>
+                <li><a href="#">Nosotros▾</a></li>
+                <li><a href="#">Preguntas▾</a></li>
+                <li><a href="#">Contacto▾</a></li>
             </ul>
 
         </nav>
@@ -43,13 +44,16 @@
 
 
             <div class="tarjeta_banner">
-            <h1>Soluciones Especializadas <br> en Gestión de Personas</h1>
-            <p>Entregamos soluciones a medida para mejorar la gestión de personas de tu empresa</p>
-            
-            <a href="https://wa.me/56912345678" target="_blank" class="boton-whatsapp" id="boton_wsp">
-                💬 Escríbenos por WhatsApp
-            </a>
+                <h1>Soluciones Especializadas <br> en Gestión de Personas</h1>
+                <p>Entregamos soluciones a medida para mejorar la gestión de personas de tu empresa</p>
+                
+                <a href="https://wa.me/56912345678" target="_blank" class="boton-whatsapp" id="boton_wsp">
+                    💬 Escríbenos por WhatsApp
+                </a>
             </div>
+            
+
+            <img class="imagen_banner2" src="./imgs/medium-shot-woman-holding-document (1) (1).png" alt="imagen">
 
         </div>
 
@@ -58,56 +62,72 @@
         </div>
 
         <section class="propuesta-valor">
-            <h2>Nos encargamos de la gestión de personas para que tú te enfoques en crecer</h2>
-            <p>Desde la contratación hasta el fin del ciclo laboral, optimizamos tu gestión de personas con soluciones confiables y ajustadas a tu empresa.</p>
+            <h2>Enfocate en crecer, nosotros en tu equipo</h2>
+            <p>Gestionamos todo el ciclo laboral con soluciones confiables y adaptadas a tu empresa.</p>
         </section>
 
 
         </div>
 
 
-        <div class="nuestros_servicios">
-
-            <h2>Nuestros Servicios</h2>
+        <h2 class="h2_servicios">Nuestros Servicios</h2>
 
             <div class="p_servicios">
                 <p>Ofrecemos una serie de servicios que pueden contribuir mucho a tu empresa</p>
                 <a href="#">Ver todos los servicios disponibles</a>
             </div>
 
-            <div class="tarjetas_servicios">
-                <div class="servicio1">
+        <div class="nuestros_servicios">
+
+            <div class="tarjetas_servicios" >
+                <div class="servicio1" data-aos="zoom-in" data-aos-duration="2000">
                     
-                    <img src="./imgs/pexels-marianna-zuzanna-498248397-16368437.jpg" alt="outsourcing de personal"  data-aos="zoom-in" data-aos-duration="1500">
-                    <h3>Servicios Transitorios</h3>
+                    <img src="./imgs/gear-player-multimedia-svgrepo-com (1).png" alt="outsourcing de personal" >
+                    <h3>Servicios Transitorios y Outsourcing</h3>
             
                     <p>Contrata personal por tiempo limitado para cubrir licencias, reemplazos o proyectos específicos.</p>
                     <a class="servicios_anchor" href="#">Saber más sobre el servicio</a>
 
                 </div>
 
-                <div class="servicio2">
+                <div class="servicio2" data-aos="zoom-in" data-aos-duration="2200">
                     
-                    <img src="./imgs/pexels-kateryna-babaieva-1423213-2760241.jpg" alt="outsourcing de personal" data-aos="zoom-in" data-aos-duration="1500">
-                    <h3>Outsourcing</h3>
+                    <img src="./imgs/handshake-deal-svgrepo-com.png" alt="outsourcing de personal">
+                    <h3>Selección y Reclutamiento</h3>
             
-                    <p>Externaliza con confianza procesos clave como la contratación, remuneraciones, control de asistencia y gestión documental.</p>
+                    <p>Conectamos a tu empresa con el talento adecuado mediante un proceso ágil y preciso.</p>
                     <a class="servicios_anchor" href="#">Saber más sobre el servicio</a>
 
                 </div>
 
-                <div class="servicio3">
-                    <img src="./imgs/pexels-pixabay-48148.jpg" alt="asesorias" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="servicio3" data-aos="zoom-in" data-aos-duration="2500">
+                    <img src="./imgs/balance-svgrepo-com.png" alt="asesorias">
                     <h3>Asesoría Laboral Integral</h3>
-                    <p>Brindamos asesoría experta en la correcta aplicación del Código del Trabajo y la Ley Karin.</p>
+                    <p>Fortalecemos tus procesos laborales para minimizar los riesgos legales.</p>
                     <a class="servicios_anchor" href="#">Saber más sobre el servicio</a>
 
                 </div>
 
-                <div class="servicio4">
-                    <img src="./imgs/pexels-mikhail-nilov-8296977.jpg" alt="auditorias" data-aos="zoom-in" data-aos-duration="1500">
-                    <h3>Diagnóstico y Auditorías Laborales</h3>
-                    <p>Analizamos contratos, documentación, procesos y prácticas internas para garantizar el cumplimiento legal.</p>
+                <div class="servicio4" data-aos="zoom-in" data-aos-duration="2800">
+                    <img src="./imgs/magnifying-glass-svgrepo-com (1).png" alt="auditorias">
+                    <h3>Auditorías Laborales</h3>
+                    <p>Evaluamos tu gestión laboral para asegurar el cumplimiento normativo y detectar oportunidades de mejora.</p>
+                    <a class="servicios_anchor" href="#">Saber más sobre el servicio</a>
+
+                </div>
+
+                <div class="servicio3" data-aos="zoom-in" data-aos-duration="2500">
+                    <img src="./imgs/balance-svgrepo-com.png" alt="asesorias">
+                    <h3>Asesoría Laboral Integral</h3>
+                    <p>Fortalecemos tus procesos laborales para minimizar los riesgos legales.</p>
+                    <a class="servicios_anchor" href="#">Saber más sobre el servicio</a>
+
+                </div>
+
+                <div class="servicio4" data-aos="zoom-in" data-aos-duration="2800">
+                    <img src="./imgs/magnifying-glass-svgrepo-com (1).png" alt="auditorias">
+                    <h3>Auditorías Laborales</h3>
+                    <p>Evaluamos tu gestión laboral para asegurar el cumplimiento normativo y detectar oportunidades de mejora.</p>
                     <a class="servicios_anchor" href="#">Saber más sobre el servicio</a>
 
                 </div>
@@ -125,19 +145,19 @@
             <div class="equipo">
                 <div class="persona1">
                     
-                    <img src="./imgs/1752974051065.png" alt="outsourcing de personal" >
-                    <h3>Francia Lizana</h3>
+                    <img src="./imgs/flizana.png" alt="outsourcing de personal" >
+                    <h3>Francia Lizana Ibaceta</h3>
             
-                    <p>Profesional con más de 20 años de experiencia en administración de personal y relaciones laborales</p>
+                    <p>Ingeniera Comercial, Magíster en Desarrollo Organizacional y RR.HH. Certificada por la Universidad de Chile en Ley Karin, con 20 años de experiencia en gestión de personas y relaciones laborales.</p>
 
                 </div>
 
                 <div class="persona2">
                     
                     <img src="./imgs/1753070538171.png" alt="outsourcing de personal">
-                    <h3>Andrea Cox</h3>
+                    <h3>Andrea Cox García</h3>
             
-                    <p>Profesional con más de 15 años de experiencia en la gestión de personas</p>
+                    <p>Trabajadora Social con mención en Salud Mental. Magíster en Dirección de Capital Humano. Docente y especialista en intervención organizacional desde el enfoque psicosocial.</p>
 
                 </div>
             </div>
