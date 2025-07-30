@@ -18,8 +18,8 @@ html {
     .planes_perfectos p{
         margin: 0;
         width: 100%;
-        padding-bottom: 3%;
-        padding-top: 2%;
+        padding-bottom: 1%;
+        padding-top: 1%;
         background-color:#5c6168;
         color: #ffffff;
         font-size: 20px;
@@ -53,6 +53,33 @@ html {
 
     }
 
+    .boton_contacta {
+        margin-left: 25%;
+    }
+
+
+    .boton_contacta a {
+        border-radius: 20px;
+        background-color: #0078D7;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+        width:90%;       
+        min-width: 90%;
+        font-size: 10px;  
+    }
+
+    .boton_contacta a:hover {
+        color: white;
+
+    }
+
+    .boton_contacta a:visited {
+        color: white;
+
+
+    }
+
     .nav {
         position: fixed;
         z-index: 9999;
@@ -72,7 +99,7 @@ html {
 
     .nav-menu ul {
         display: flex;
-        gap:2rem;
+        gap:3rem;
         list-style: none;
         margin: 0;
         justify-content: center;
@@ -82,6 +109,7 @@ html {
         
     .nav-menu {
         text-align: center;
+        margin-left: 10%;
         justify-content: center;
         padding: 10px 10px;
         font-size: 20px;
@@ -113,7 +141,7 @@ html {
 
     .banner_servicios {
             height: 42rem;
-            padding-top: 0;
+            padding-top: 70px;
             margin-bottom: 0px;
             padding-bottom: 0;
             display: flex;
@@ -132,9 +160,11 @@ html {
             width: 100%;
             height: 100%;
             justify-self: center;
-            
-            max-width: 600px;
-            min-width: 600px;
+        
+            transform: translateX(20px);
+            transition: opacity 2s ease-out, transform 0.8s ease-out;
+            animation: aparecer 2s forwards ease-out;
+            max-width: 550px;
             
         }
 
@@ -143,7 +173,7 @@ html {
             width: 52%;
             margin-left: 3%;
             margin-top: 2%;
-            height: 300px;
+            height: 200px;
             
         }
         
@@ -278,8 +308,9 @@ html {
 
 
     .servicios_anchor {
-            text-align: left;
-            padding-left: 23%;
+            display: flex;
+            justify-content: right;
+            padding-right: 2%;
             font-weight: bold;
 
         }
@@ -316,6 +347,67 @@ html {
             padding-left: 6%;
             margin-bottom: 20px;
         }
+
+    .testimonios {
+        padding: 60px ;
+        background-color: #3c7c96;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonios h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+        transition: all 0.5s ease-in-out;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .slide.activo {
+        display: block;
+    }
+
+    .slide p {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    .slide h4 {
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .controles {
+        margin-top: 20px;
+    }
+
+    .controles button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 15px;
+        color: #ffffff;
+    }
+    
+    .imagen_equipo2 {
+        margin-top: 1%; 
+        margin-left: 23.5%; 
+        width:53%; 
+        border-radius: 20px;
+    }
+
 
     .quienes_somos {
             text-align: center;
@@ -382,27 +474,26 @@ html {
         }
 
     .razones img{
-            width: 5%;
-            margin-left: 16%;
+            width: 7%;
         }
 
     .razones p{
-            margin-left: 22%;
-
+            margin-left: 10%;
+            margin-top: 1%;
             text-align: start;
-            font-size: 22px;
-            margin-right: 6%;
-            padding-left: 8%;
+            font-size: 25px;
+            margin-right: 8%;
+            padding-right: 23%;
+            padding-left: 21%;
         }
 
     .razon {
             display: flex;
-            text-align: center;
-            margin-left: 12%;
-            margin-bottom: 0;
             font-size: 25px;
-            gap: 3px;
-
+            text-align: center;
+            margin-left: 25%;
+            margin-bottom: 0;
+            gap: 10px;
         }
 
     .seccion_formulario {
@@ -411,6 +502,7 @@ html {
             background-color: #f8f8f8;
             margin-bottom: 35px;
             color: #0e2029;
+            
 
         }
 
@@ -418,7 +510,8 @@ html {
             background-color: white;
             margin: 0 auto;
             padding: 30px 20px;
-            max-width: 600px;
+            max-width:700px;
+            
             border-radius: 15px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
@@ -428,7 +521,7 @@ html {
             width: 90%;
             margin: 10px auto;
             padding: 12px;
-            font-size: 16px;
+            font-size: 20px;
             border: 1px solid #ccc;
             border-radius: 8px;
             display: block;
@@ -473,7 +566,7 @@ html {
         }
 
     .pregunta {
-            max-width: 700px;
+            max-width: 900px;
             margin: 0 auto 25px;
             padding: 20px;
             border-left: 10px solid #072842;
@@ -514,39 +607,49 @@ html {
         }
 
     .pie {
-            display: flex;
-            background-color: #ffffff;
-            margin-bottom: 0;
-            padding-bottom: 20px;
-            color: #000000;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px 420px 30px 380px;
+        color: #333;
+        flex-wrap: wrap;
+    }
 
     .pie_logo {
-            list-style: none;
-            margin-top: 8%;
-        }
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
     .pie_redes {
-            list-style: none;
-
-            
-        }
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
 
     .pie_redes img {
-            width: 8%;
-        }
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    .pie_redes img:hover {
+        transform: scale(1.2);
+    }
 }
 
 
 
-@media (min-width: 1441px) and (max-width: 1900px){
+@media (min-width: 1440px) and (max-width: 1900px){
 
 
     .planes_perfectos p{
         margin: 0;
         width: 100%;
-        padding-bottom: 3%;
-        padding-top: 2%;
+        padding-bottom: 1%;
+        padding-top: 1%;
         background-color:#5c6168;
         color: #ffffff;
         font-size: 20px;
@@ -807,8 +910,9 @@ html {
 
 
     .servicios_anchor {
-            text-align: left;
-            padding-left: 23%;
+            display: flex;
+            justify-content: right;
+            padding-right: 2%;
             font-weight: bold;
 
         }
@@ -845,6 +949,65 @@ html {
             padding-left: 6%;
             margin-bottom: 20px;
         }
+    .testimonios {
+        padding: 60px ;
+        background-color: #3c7c96;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonios h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+        transition: all 0.5s ease-in-out;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .slide.activo {
+        display: block;
+    }
+
+    .slide p {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    .slide h4 {
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .controles {
+        margin-top: 20px;
+    }
+
+    .controles button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 15px;
+        color: #ffffff;
+    }
+
+    .imagen_equipo2 {
+        margin-top: 1%; 
+        margin-left: 24%; 
+        width:52%; 
+        border-radius: 20px;
+    }
 
     .quienes_somos {
             text-align: center;
@@ -911,34 +1074,34 @@ html {
         }
 
     .razones img{
-            width: 5%;
-            margin-left: 16%;
+            width: 10%;
         }
 
     .razones p{
-            margin-left: 22%;
-
+            margin-left: 10%;
+            margin-top: 1%;
             text-align: start;
-            font-size: 22px;
-            margin-right: 6%;
-            padding-left: 8%;
+            font-size: 25px;
+            margin-right: 8%;
+            padding-right: 13%;
+            padding-left: 21%;
         }
 
     .razon {
             display: flex;
-            text-align: center;
-            margin-left: 12%;
-            margin-bottom: 0;
             font-size: 25px;
-            gap: 3px;
-
+            text-align: center;
+            margin-left: 22%;
+            margin-bottom: 0;
+            gap: 10px;
         }
 
     .seccion_formulario {
             text-align: center;
             padding: 1px 20px 20px;
             background-color: #f8f8f8;
-            margin-bottom: 35px;
+            margin-bottom: 10px;
+            padding-bottom: 50px;
             color: #0e2029;
 
         }
@@ -1043,41 +1206,51 @@ html {
         }
 
     .pie {
-            display: flex;
-            background-color: #ffffff;
-            margin-bottom: 0;
-            padding-bottom: 20px;
-            color: #000000;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px 420px 30px 380px;
+        color: #333;
+        flex-wrap: wrap;
+    }
 
     .pie_logo {
-            list-style: none;
-            margin-top: 8%;
-        }
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
     .pie_redes {
-            list-style: none;
-
-            
-        }
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
 
     .pie_redes img {
-            width: 8%;
-        }
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    .pie_redes img:hover {
+        transform: scale(1.2);
+    }
 }
 
 
 
 
 
-@media (min-width: 901px) and (max-width: 1440px) {
+@media (min-width: 901px) and (max-width: 1439px) {
 
 
     .planes_perfectos p{
         margin: 0;
         width: 100%;
-        padding-bottom: 3%;
-        padding-top: 2%;
+        padding-bottom: 1%;
+        padding-top: 1%;
         background-color:#5c6168;
         color: #ffffff;
         font-size: 20px;
@@ -1336,8 +1509,10 @@ html {
 
 
     .servicios_anchor {
-            text-align: left;
-            padding-left: 23%;
+            display: flex;
+            justify-content: right;
+            padding-right: 3%;
+            
             font-weight: bold;
 
         }
@@ -1353,7 +1528,7 @@ html {
 
     .tarjetas_servicios div {
             background-color: white;
-            width: 270px;
+            width: 250px;
             padding: 20px;
             height: auto;
             border: 5px solid #ffffff;
@@ -1374,6 +1549,66 @@ html {
             padding-left: 6%;
             margin-bottom: 20px;
         }
+
+    .testimonios {
+        padding: 60px ;
+        background-color: #3c7c96;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonios h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+        transition: all 0.5s ease-in-out;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .slide.activo {
+        display: block;
+    }
+
+    .slide p {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    .slide h4 {
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .controles {
+        margin-top: 20px;
+    }
+
+    .controles button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 15px;
+        color: #ffffff;
+    }
+
+    .imagen_equipo2 {
+        margin-top: 1%; 
+        margin-left: 25%; 
+        width:50%; 
+        border-radius: 20px;
+    }
 
     .quienes_somos {
             text-align: center;
@@ -1440,34 +1675,33 @@ html {
         }
 
     .razones img{
-            width: 5%;
-            margin-left: 16%;
+            width: 12%;
         }
 
     .razones p{
-            margin-left: 22%;
-
+            margin-left: 10%;
+            margin-top: 1%;
             text-align: start;
-            font-size: 22px;
-            margin-right: 6%;
-            padding-left: 8%;
+            font-size: 25px;
+            margin-right: 8%;
+            padding-right: 12%;
+            padding-left: 15%;
         }
 
     .razon {
             display: flex;
-            text-align: center;
-            margin-left: 12%;
-            margin-bottom: 0;
             font-size: 25px;
-            gap: 3px;
-
+            text-align: center;
+            margin-left: 13%;
+            margin-bottom: 0;
+            gap: 10px;
         }
 
     .seccion_formulario {
             text-align: center;
-            padding: 1px 20px 20px;
+            padding: 1px 20px 50px;
             background-color: #f8f8f8;
-            margin-bottom: 35px;
+            margin-bottom: 10px;
             color: #0e2029;
 
         }
@@ -1572,27 +1806,37 @@ html {
         }
 
     .pie {
-            display: flex;
-            background-color: #ffffff;
-            margin-bottom: 0;
-            padding-bottom: 20px;
-            color: #000000;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px 220px 30px 180px;
+        color: #333;
+        flex-wrap: wrap;
+    }
 
     .pie_logo {
-            list-style: none;
-            margin-top: 8%;
-        }
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
     .pie_redes {
-            list-style: none;
-
-            
-        }
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
 
     .pie_redes img {
-            width: 8%;
-        }
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    .pie_redes img:hover {
+        transform: scale(1.2);
+    }
 }
 
 
@@ -1605,8 +1849,8 @@ html {
     .planes_perfectos p{
         margin: 0;
         width: 100%;
-        padding-bottom: 3%;
-        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-top: 2%;
         background-color:#5c6168;
         color: #ffffff;
         font-size: 20px;
@@ -1898,8 +2142,9 @@ html {
 
 
     .servicios_anchor {
-            text-align: left;
-            padding-left: 23%;
+            display: flex;
+            justify-content: right;
+            padding-right: 3%;
             font-weight: bold;
 
         }
@@ -1937,6 +2182,67 @@ html {
             margin-bottom: 20px;
         }
 
+
+    .testimonios {
+        padding: 60px ;
+        background-color: #3c7c96;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonios h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+        transition: all 0.5s ease-in-out;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .slide.activo {
+        display: block;
+    }
+
+    .slide p {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    .slide h4 {
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .controles {
+        margin-top: 20px;
+    }
+
+    .controles button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 15px;
+        color: #ffffff;
+    }
+
+    .imagen_equipo2 {
+        margin-top: 1%; 
+        margin-left: 15%; 
+        width:70%; 
+        border-radius: 20px;
+    }    
+
     .quienes_somos {
             text-align: center;
         }
@@ -1952,7 +2258,7 @@ html {
             border: rgb(219, 219, 219);
             border-radius: 5%;
             box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
-            margin-top: 12%;
+            margin-top: 5%;
             margin-left: 15%;
             width: 70%;
             color: #213b55;
@@ -2002,22 +2308,23 @@ html {
         }
 
     .razones img{
-            width: 7%;
+            width: 12%;
         }
 
     .razones p{
             margin-left: 10%;
             margin-top: 1%;
             text-align: start;
-            font-size: 20px;
-            margin-right: 6%;
-            padding-left: 10%;
+            font-size: 25px;
+            margin-right: 9%;
+            padding-left: 12%;
         }
 
     .razon {
             display: flex;
+            font-size: 20px;
             text-align: center;
-            margin-left: 12%;
+            margin-left: 9%;
             margin-bottom: 0;
             gap: 10px;
         }
@@ -2026,8 +2333,9 @@ html {
             text-align: center;
             padding: 1px 20px 20px;
             background-color: #f8f8f8;
-            margin-bottom: 35px;
+            margin-bottom: 10px;
             color: #0e2029;
+            padding-bottom: 50px;
 
         }
 
@@ -2131,27 +2439,37 @@ html {
         }
 
     .pie {
-            display: flex;
-            background-color: #ffffff;
-            margin-bottom: 0;
-            padding-bottom: 20px;
-            color: #000000;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px 70px 30px 70px;
+        color: #333;
+        flex-wrap: wrap;
+    }
 
     .pie_logo {
-            list-style: none;
-            margin-top: 8%;
-        }
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
     .pie_redes {
-            list-style: none;
-
-            
-        }
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 
     .pie_redes img {
-            width: 8%;
-        }
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    .pie_redes img:hover {
+        transform: scale(1.2);
+    }
 }
 
 
@@ -2163,8 +2481,8 @@ html {
     .planes_perfectos p{
         margin: 0;
         width: 100%;
-        padding-bottom: 5%;
-        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-top: 2%;
         background-color:#5c6168;
         color: #ffffff;
         font-size: 20px;
@@ -2318,6 +2636,7 @@ html {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center -70px;
+        
         
     }
 
@@ -2487,6 +2806,66 @@ html {
         text-align: justify;
         padding-left: 6%;
         margin-bottom: 20px;
+    }
+
+    .imagen_equipo2 {
+        margin-top: 1%; 
+        margin-left: 7%; 
+        width:90%; 
+        border-radius: 20px;
+    }
+
+    .testimonios {
+        padding: 60px ;
+        background-color: #3c7c96;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonios h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+        transition: all 0.5s ease-in-out;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .slide.activo {
+        display: block;
+    }
+
+    .slide p {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    .slide h4 {
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .controles {
+        margin-top: 20px;
+    }
+
+    .controles button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 15px;
+        color: #ffffff;
     }
 
     .quienes_somos {

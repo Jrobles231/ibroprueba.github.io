@@ -28,9 +28,11 @@
         <nav class="nav-menu" id="nav-menu">
             
             <ul>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li class="boton_contacta"><a href="#seccion_contacto" id="boton_wsp">💬 Contacta aquí</a></li>
             </ul>
 
         </nav>
@@ -52,7 +54,7 @@
             </div>
             
 
-            <img class="imagen_banner2" src="./imgs/medium-shot-woman-holding-document (1) (1).png" alt="imagen">
+            <img class="imagen_banner2" src="./imgs/medium-shot-woman-holding-document (1) (1).png" alt="imagen" >
 
         </div>
 
@@ -119,17 +121,47 @@
                     <img src="./imgs/mail-exclamation-svgrepo-com.png" alt="auditorias">
                     <h3>Canal de denuncias</h3>
                     <p>Implementamos un canal confidencial y seguro para reportar conductas indebidas dentro de tu organización.</p>
+                    <a class="servicios_anchor" href="#seccion_contacto">Consultar por este servicio</a>
                 </div>
 
                 <div class="servicio8" data-aos="zoom-in" data-aos-duration="2800">
                     <img src="./imgs/chart-column-svgrepo-com.png" alt="auditorias">
                     <h3>Soluciones BI</h3>
-                    <p>Diseñamos dashboards interactivos que transforman datos de RRHH en información clave para una mejor toma de decisiones.</p>
+                    <p>Diseñamos dashboards interactivos que transforman datos de RRHH en información clave.</p>
+                    <a class="servicios_anchor" href="#seccion_contacto">Consultar por este servicio</a>
                 </div>
             </div>
 
         </div>
 
+        <div class="testimonios" id="testimonios">
+            <h2>Testimonios</h2>
+            <div class="carrusel">
+                <div class="slide activo">
+                <p>"Gracias al equipo, logramos cubrir una vacante crítica en menos de 48 horas. Servicio ágil y confiable."</p>
+                <h4>- Camila Torres, RRHH en EmpresaX</h4>
+                </div>
+                <div class="slide">
+                <p>"La asesoría que recibimos fue clave para optimizar nuestros procesos de contratación."</p>
+                <h4>- Alejandro Muñoz, CEO de Inversiones Sur</h4>
+                </div>
+                <div class="slide">
+                <p>"Profesionales comprometidos. Estamos muy satisfechos con el apoyo recibido."</p>
+                <h4>- Carolina Díaz, Coordinadora de Personas</h4>
+                </div>
+            </div>
+            <div class="controles">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+
+
+        <h2 class="h2_servicios">Nosotros</h2>
+        <p style="text-align: center;">Nuestro equipo está compuesto por una serie de profesionales <br> que son especialistas en temas legales,
+                    administrativos, contables, financieros y tecnológicos.</p>
+        
+        <img class ="imagen_equipo2" src="./imgs/pexels-fauxels-3183150.jpg" alt="imagen" data-aos="fade-right" data-aos-duration="2800">
 
        <div id="nosotros_id" class="nosotros">
 
@@ -302,7 +334,8 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
+        
     </script>
 
     <script src="script.js"></script>
