@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: "sans-serif";
     background-color: #ffffff;
+    
 }
 
 html {
@@ -54,19 +55,22 @@ html {
     }
 
     .boton_contacta {
-        margin-left: 25%;
+        margin-left: 2%;
+
     }
 
 
     .boton_contacta a {
-        border-radius: 20px;
-        background-color: #0078D7;
+        border-radius: 30px;
+        background-color: #484d52;
         color: white;
         margin-top: 5px;
         font-weight: bold;
-        width:90%;       
-        min-width: 90%;
-        font-size: 10px;  
+        width:95%;       
+        min-width: 95%;
+        font-size: 15px;  
+        font-style:oblique;
+        text-decoration: none;
     }
 
     .boton_contacta a:hover {
@@ -76,7 +80,6 @@ html {
 
     .boton_contacta a:visited {
         color: white;
-
 
     }
 
@@ -111,7 +114,6 @@ html {
         text-align: center;
         margin-left: 10%;
         justify-content: center;
-        padding: 10px 10px;
         font-size: 20px;
         width: 100%;
 
@@ -458,43 +460,59 @@ html {
             
         }
         
+     .razones {
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        padding: 0 30px;
+        max-width: 60%; 
+        margin: 0 auto;       
+
+    }
+
     .porque_elegirnos {
-            background-color: #072842;
-            border-bottom: 2px solid #e0e0e0;
-            color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-
-    .porque_elegirnos h2{
-            text-align: center;
-            margin-top: 2%;
-            
-            font-weight: bold;
-        }
-
-    .razones img{
-            width: 7%;
-        }
-
-    .razones p{
-            margin-left: 10%;
-            margin-top: 1%;
-            text-align: start;
-            font-size: 25px;
-            margin-right: 8%;
-            padding-right: 23%;
-            padding-left: 21%;
-        }
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #072842;
+        
+    }
+    .porque_elegirnos h2 {
+        text-align: center;
+        color: white;
+    }
 
     .razon {
-            display: flex;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 25%;
-            margin-bottom: 0;
-            gap: 10px;
-        }
+        background-color: none;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .razon img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .razon .contenido {
+        color: rgb(255, 255, 255);
+    }
+
+    .razon h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .razon p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
+    
 
     .seccion_formulario {
             text-align: center;
@@ -677,7 +695,34 @@ html {
 
     }
 
+    .boton_contacta {
+        margin-left: 2%;
 
+    }
+
+
+    .boton_contacta a {
+        border-radius: 30px;
+        background-color: #484d52;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+        width:95%;       
+        min-width: 95%;
+        font-size: 15px;  
+        font-style:oblique;
+        text-decoration: none;
+    }
+
+    .boton_contacta a:hover {
+        color: white;
+
+    }
+
+    .boton_contacta a:visited {
+        color: white;
+
+    }
     .logo {
         font-size: 30px;
 
@@ -713,7 +758,6 @@ html {
     .nav-menu {
         text-align: center;
         justify-content: center;
-        padding: 10px 10px;
         font-size: 20px;
         width: 100%;
 
@@ -1058,53 +1102,58 @@ html {
             
         }
         
+     .razones {
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        padding: 0 30px;
+        max-width: 70%;
+        margin: 0 auto;
+
+    }
+
     .porque_elegirnos {
-            background-color: #072842;
-            border-bottom: 2px solid #e0e0e0;
-            color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-
-    .porque_elegirnos h2{
-            text-align: center;
-            margin-top: 2%;
-            
-            font-weight: bold;
-        }
-
-    .razones img{
-            width: 10%;
-        }
-
-    .razones p{
-            margin-left: 10%;
-            margin-top: 1%;
-            text-align: start;
-            font-size: 25px;
-            margin-right: 8%;
-            padding-right: 13%;
-            padding-left: 21%;
-        }
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #072842;
+    }
+    .porque_elegirnos h2 {
+        text-align: center;
+        color: white;
+    }
 
     .razon {
-            display: flex;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 22%;
-            margin-bottom: 0;
-            gap: 10px;
-        }
+        background-color: none;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        width: 70%;
+        margin: 0 auto;
+    }
 
-    .seccion_formulario {
-            text-align: center;
-            padding: 1px 20px 20px;
-            background-color: #f8f8f8;
-            margin-bottom: 10px;
-            padding-bottom: 50px;
-            color: #0e2029;
+    .razon img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
 
-        }
+    .razon .contenido {
+        color: rgb(255, 255, 255);
+    }
+
+    .razon h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .razon p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
+    
 
     .formulario {
             background-color: white;
@@ -1113,6 +1162,10 @@ html {
             max-width: 600px;
             border-radius: 15px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+    .seccion_formulario {
+        text-align: center;
         }
 
     .formulario input,
@@ -1284,10 +1337,36 @@ html {
 
     }
 
-    .nav {
-        position: fixed;
-        z-index: 9999;
+    .boton_contacta {
+        margin-left: 2%;
+
     }
+
+
+    .boton_contacta a {
+        border-radius: 30px;
+        background-color: #484d52;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+        width:95%;       
+        min-width: 95%;
+        font-size: 15px;  
+        font-style:oblique;
+        text-decoration: none;
+    }
+
+    .boton_contacta a:hover {
+        color: white;
+
+    }
+
+    .boton_contacta a:visited {
+        color: white;
+
+    }
+
+
 
     .hamburger{
         display: none;
@@ -1314,7 +1393,7 @@ html {
     .nav-menu {
         text-align: center;
         justify-content: center;
-        padding: 10px 10px;
+
         font-size: 20px;
         width: 100%;
 
@@ -1658,44 +1737,61 @@ html {
             margin-bottom: 5px;
             
         }
+
+     .razones {
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        padding: 0 30px;
         
+
+    }
+
     .porque_elegirnos {
-            background-color: #072842;
-            border-bottom: 2px solid #e0e0e0;
-            color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-
-    .porque_elegirnos h2{
-            text-align: center;
-            margin-top: 2%;
-            
-            font-weight: bold;
-        }
-
-    .razones img{
-            width: 12%;
-        }
-
-    .razones p{
-            margin-left: 10%;
-            margin-top: 1%;
-            text-align: start;
-            font-size: 25px;
-            margin-right: 8%;
-            padding-right: 12%;
-            padding-left: 15%;
-        }
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #072842;
+        
+    }
+    .porque_elegirnos h2 {
+        text-align: center;
+        color: white;
+    }
 
     .razon {
-            display: flex;
-            font-size: 25px;
-            text-align: center;
-            margin-left: 13%;
-            margin-bottom: 0;
-            gap: 10px;
-        }
+        background-color: #072842;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid white;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .razon img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .razon .contenido {
+        color: rgb(255, 254, 254);
+    }
+
+    .razon h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .razon p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
+    
+
 
     .seccion_formulario {
             text-align: center;
@@ -1883,6 +1979,36 @@ html {
 
     .logo {
         font-size: 30px;
+
+    }
+
+
+    .boton_contacta {
+        margin-left: 2%;
+
+    }
+
+
+    .boton_contacta a {
+        border-radius: 30px;
+        background-color: #484d52;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+        width:95%;       
+        min-width: 95%;
+        font-size: 15px;  
+        font-style:oblique;
+        text-decoration: none;
+    }
+
+    .boton_contacta a:hover {
+        color: white;
+
+    }
+
+    .boton_contacta a:visited {
+        color: white;
 
     }
 
@@ -2291,48 +2417,62 @@ html {
             margin-bottom: 5px;
             
         }
+
+    .razones {
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        padding: 0 30px;
         
+
+    }
+
     .porque_elegirnos {
-            background-color: #072842;
-            border-bottom: 2px solid #e0e0e0;
-            color: white;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-
-    .porque_elegirnos h2{
-            text-align: center;
-            margin-top: 2%;
-
-            font-weight: bold;
-        }
-
-    .razones img{
-            width: 12%;
-        }
-
-    .razones p{
-            margin-left: 10%;
-            margin-top: 1%;
-            text-align: start;
-            font-size: 25px;
-            margin-right: 9%;
-            padding-left: 12%;
-        }
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #072842;
+    }
+    .porque_elegirnos h2 {
+        text-align: center;
+        color: white;
+    }
 
     .razon {
-            display: flex;
-            font-size: 20px;
-            text-align: center;
-            margin-left: 9%;
-            margin-bottom: 0;
-            gap: 10px;
-        }
+        background-color: none;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid white;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .razon img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .razon .contenido {
+        color: rgb(255, 255, 255);
+    }
+
+    .razon h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .razon p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
 
     .seccion_formulario {
             text-align: center;
             padding: 1px 20px 20px;
-            background-color: #f8f8f8;
+            background-color: #f5f5f5;
             margin-bottom: 10px;
             color: #0e2029;
             padding-bottom: 50px;
@@ -2385,7 +2525,7 @@ html {
 
     .seccion-preguntas {
             padding: 30px 20px;
-            background-color: #ececec;
+            background-color: #e0e0e0;
             padding-bottom: 50px;
         }
 
@@ -2393,7 +2533,7 @@ html {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 30px;
-            color: black;
+            color: rgb(0, 0, 0);
 
         }
 
@@ -2401,7 +2541,7 @@ html {
             max-width: 500px;
             margin: 0 auto 25px;
             padding: 20px;
-            border-left: 10px solid #072842;
+            border-left: 10px solid #050550;
             background-color: white;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             border-radius: 8px;
@@ -2427,7 +2567,7 @@ html {
         }
 
     .pregunta p {
-            color: #555;
+            color: #000000;
             max-height: 0;
             opacity: 0;
             transition: max-height 1s ease, opacity 0.5s ease;
@@ -2476,7 +2616,7 @@ html {
 
 
 
-@media (max-width: 600px) {
+@media (min-width: 397px) and (max-width: 600px) {
 
     .planes_perfectos p{
         margin: 0;
@@ -2515,6 +2655,36 @@ html {
 
     .logo {
         font-size: 30px;
+
+    }
+
+
+    .boton_contacta {
+        margin-left: 2%;
+
+    }
+
+
+    .boton_contacta a {
+        border-radius: 30px;
+        background-color: #484d52;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+        width:95%;       
+        min-width: 95%;
+        font-size: 15px;  
+        font-style:oblique;
+        text-decoration: none;
+    }
+
+    .boton_contacta a:hover {
+        color: white;
+
+    }
+
+    .boton_contacta a:visited {
+        color: white;
 
     }
 
@@ -2620,8 +2790,7 @@ html {
         width: 85%;
         height: 400px;
         
-        margin-top: 120px;
-        margin-left: 0px;
+        margin-top: 30px;
         transform: translateX(20px);
         transition: opacity 2s ease-out, transform 1s ease-out;
         animation: aparecer 2s forwards ease-out;
@@ -2643,9 +2812,9 @@ html {
     .tarjeta_banner {
             color: #000000;
             width: 52%;
-            margin-left: 4%;
+            margin-left: 2%;
     
-            height: 300px;
+            height: 100%;
             
         }
         
@@ -2653,7 +2822,7 @@ html {
     .banner_servicios h1 {
             color:	#213b55;
           
-            font-size:37px;
+            font-size:3rem;
             padding-left: 10%;
             padding-right: 10px;
             width: 350px;
@@ -2786,7 +2955,7 @@ html {
     .tarjetas_servicios div {
         background-color:none;
         width: 88%;
-        padding-right: 2%;
+        padding-right: 1%;
         margin-left: 20px;
         margin-top: 20px;
         height: auto;
@@ -2917,39 +3086,55 @@ html {
         
     }
     
+    .razones {
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        padding: 0 30px;
+        
+
+    }
+
     .porque_elegirnos {
+        padding-bottom: 50px;
+        padding-top: 50px;
         background-color: #072842;
-        border-bottom: 2px solid #e0e0e0;
-        color: white;
-        padding-bottom: 20px;
-        padding-top: 2px;
     }
-
-    .porque_elegirnos h2{
+    .porque_elegirnos h2 {
         text-align: center;
-        margin-top: 10%;
-
-        font-weight: bold;
-    }
-
-    .razones img{
-        width: 10%;
-    }
-
-    .razones p{
-        margin-left: 6%;
-        margin-top: 1%;
-        text-align: start;
-
-        margin-right: 6%;
+        color: white;
     }
 
     .razon {
-        display: flex;
+        background-color: none;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid white;
         text-align: center;
-        margin-left: 6%;
-        margin-bottom: 0;
-        gap: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .razon img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .razon .contenido {
+        color: rgb(255, 255, 255);
+    }
+
+    .razon h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .razon p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 auto;
     }
 
     .seccion_formulario {
@@ -3065,6 +3250,664 @@ html {
         background-color: #ffffff;
         gap:6%;
         margin-left: 2%;
+        margin-bottom: 0;
+        padding-bottom: 2px;
+        color: #000000;
+    }
+
+    .pie_logo {
+        list-style: none;
+        margin-top: 8%;
+    }
+
+    .pie_redes {
+        list-style: none;
+
+        
+    }
+
+    .pie_redes img {
+        width: 8%;
+    }
+
+}
+
+
+
+@media (max-width: 396px) {
+    
+
+    .planes_perfectos p{
+        margin: 0;
+        width: 100%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-color:#5c6168;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .a {
+        color: #0e528a;
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+    a:hover {
+        color: #0e528a;
+        }
+    a:visited {
+        color: #0e528a;
+        }
+
+
+    header {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+
+        
+
+    }
+
+
+    .logo {
+        font-size: 30px;
+
+    }
+
+
+    .boton_contacta {
+        margin-left: 2%;
+
+    }
+
+
+    .boton_contacta a {
+        border-radius: 30px;
+        background-color: #484d52;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+        width:95%;       
+        min-width: 95%;
+        font-size: 15px;  
+        font-style:oblique;
+        text-decoration: none;
+    }
+
+    .boton_contacta a:hover {
+        color: white;
+
+    }
+
+    .boton_contacta a:visited {
+        color: white;
+
+    }
+
+    .nav {
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .hamburger{
+        display: flex;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+        background: #ffffff;
+        padding-left: 88%;
+        color:#151e29;
+    }
+    
+    .close {
+        background: none;
+        border: none;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        cursor: pointer;
+        color: black;
+    }
+
+    .nav-menu:not(.active) .close{
+        display: none;
+    }
+
+    .nav-menu.active ~ .hamburger {
+        display: none;
+    }
+
+
+    .nav-menu ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+        
+    .nav-menu {
+        display:none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        gap: 2rem;
+        height:350rem;
+        padding: 10px 10px;
+        position:absolute;
+        font-size: 20px;
+        width: 100%;
+        background-color:#ffffff;
+        z-index: 9999;
+
+    }
+
+    .nav-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid #eee;
+    }
+    
+    .nav-menu a {
+        text-decoration: none;
+        color: #333;
+        padding: 15px;
+        display: block;
+        transition: background 0.2s;
+    }
+
+    .nav-menu a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+    .nuestros_servicios {
+        background-color: #ffffff;
+    }
+
+    .nuestros_servicios h2 {
+        text-align: center;
+    }
+
+
+    .imagen_banner2{
+        width: 85%;
+        height: 380px;
+        
+        margin-top: 100px;
+        margin-left: 0px;
+        transform: translateX(20px);
+        transition: opacity 2s ease-out, transform 1s ease-out;
+        animation: aparecer 2s forwards ease-out;
+        max-width: 320px;
+    }
+
+    .banner_servicios {
+        display: flex;
+        flex-direction: column;
+        background-image: url(./imgs/WhatsApp\ Image\ 2025-07-29\ at\ 00.20.25.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center -70px;
+
+        
+    }
+
+    .tarjeta_banner {
+            color: #000000;
+            width: 52%;
+            margin-left: 4%;
+    
+            height: 300px;
+            
+        }
+        
+
+    .banner_servicios h1 {
+            color:	#213b55;
+          
+            font-size:2rem;
+            padding-left: 10%;
+            padding-right: 10px;
+            width: 100%;
+        }
+
+        
+    .banner_servicios p {
+            text-align: start;
+            color: #283a4d;
+            padding-left: 10%;
+            margin-left: 2%;
+            margin-right: 7%;
+            font-size: 20px;
+            width: 230px;
+        }
+
+    .boton-whatsapp {
+            display: flex;
+            background-color: #54b6ce;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-top: 5%;
+            width: 80%;       
+            max-width: 70%;       
+            margin-left: 10%;
+        }
+
+    .boton-whatsapp:hover {
+            background-color: #0078D7;
+        }
+
+    .boton-whatsapp:visited {
+            color: white;
+        }
+        
+
+    .contacto_whatsapp {
+            margin-left: 40%;
+        }
+
+
+    .propuesta-valor {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f5f5f5;
+        
+        border-top: 2px solid #e0e0e0;
+        border-bottom: 3px solid #e0e0e0;
+    }
+
+    .propuesta-valor h2 {
+        font-size: 30px;
+        color: #213b55;
+        margin-bottom: 15px;
+    }
+
+    .propuesta-valor p {
+        font-size: 1.2rem;
+        color: #082e4d;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .h2_servicios {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .p_servicios p {
+        text-align: center;
+        margin-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nuestros_servicios {
+        color: #213b55;
+        margin-bottom: 3%;
+    }
+
+    .nuestros_servicios h2 {
+        font-size: 30px;
+    }
+
+    .p_servicios {
+        text-align: center;
+    }
+    
+    .p_servicios a {
+        color: #2967a5;
+        font-weight: bold;
+    }
+
+    .p_servicios a:hover {
+        color: #2967a5;
+    }
+
+    
+
+    .tarjetas_servicios img {
+        width: auto;
+        height: 100px;
+        padding-top: 25px;
+        padding-bottom: 3px;
+        padding-left: 37%;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+
+    .servicios_anchor {
+        text-align: left;
+        padding-left: 25%;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .servicios_anchor:hover {
+        color: #457db6;
+    }
+
+    .servicios_anchor:visited {
+        color: #457db6;
+    }
+
+    .tarjetas_servicios div {
+        background-color:none;
+        width: 88%;
+        padding-right: 2%;
+        margin-left: 13.5px;
+        margin-top: 20px;
+        height: auto;
+        margin-bottom: 30px;
+        border: 5px solid #ffffff;
+        border-radius:6px;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .tarjetas_servicios h3 {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 6%;
+    }
+    
+    .tarjetas_servicios p {
+        text-align: justify;
+        padding-left: 6%;
+        margin-bottom: 20px;
+    }
+
+    .imagen_equipo2 {
+        margin-top: 1%; 
+        margin-left: 7%; 
+        width:90%; 
+        border-radius: 20px;
+    }
+
+    .testimonios {
+        padding: 60px ;
+        background-color: #3c7c96;
+        color: white;
+        text-align: center;
+    }
+
+    .testimonios h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .carrusel {
+        position: relative;
+        overflow: hidden;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+        transition: all 0.5s ease-in-out;
+        padding: 20px;
+        min-height: 150px;
+    }
+
+    .slide.activo {
+        display: block;
+    }
+
+    .slide p {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    .slide h4 {
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .controles {
+        margin-top: 20px;
+    }
+
+    .controles button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 15px;
+        color: #ffffff;
+    }
+
+    .quienes_somos {
+        text-align: center;
+    }
+    .quienes_somos img {
+        margin-left: 10px;
+    }
+
+    .nosotros {
+        background-color: #ececec;
+        text-align: center;
+        padding: 1px 5px;
+        border-bottom: 5px solid #e0e0e0;
+        border: rgb(219, 219, 219);
+        border-radius: 5%;
+        box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 12%;
+        margin-left: 8%;
+        width: 85%;
+        color: #213b55;
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 2s ease-out, transform 2s ease-out
+    }
+
+    .nosotros.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .equipo img {
+        width: 150px;
+        height: 150px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        padding-left: 6%;
+        border-radius: 50%;
+    }
+    
+
+    .equipo div {
+        background-color:none;
+        width: 92%;
+        margin-left: 12px;
+        height: auto;
+        margin-bottom: 5px;
+        
+    }
+    
+    .razones {
+        display: flex;
+        flex-direction:column;
+        gap: 30px;
+        padding: 0 30px;
+        
+
+    }
+
+    .porque_elegirnos {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #072842;
+    }
+    .porque_elegirnos h2 {
+        text-align: center;
+        color: white;
+    }
+
+    .razon {
+        background-color: none;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid white;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .razon img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .razon .contenido {
+        color: rgb(255, 255, 255);
+    }
+
+    .razon h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .razon p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
+
+    .seccion_formulario {
+        text-align: center;
+        padding: 1px 20px 20px;
+        background-color: #f8f8f8;
+        margin-bottom: 35px;
+        color: #0e2029;
+
+    }
+
+    .formulario {
+        background-color: white;
+        margin: 0 auto;
+        padding: 30px 20px;
+        max-width: 500px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .formulario input,
+    .formulario textarea {
+        width: 90%;
+        margin: 10px auto;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        display: block;
+        box-sizing: border-box;
+        transition:  0.7s;
+    }
+
+    .formulario input:focus,
+    .formulario textarea:focus {
+        border-color: black;
+        outline: none;
+    }
+
+    .formulario button {
+        margin-top: 1%;
+        padding: 12px 24px;
+        color: white;
+        background-color: #095d77;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .formulario button:hover {
+        background-color: #0078D7;
+    }
+
+    .seccion-preguntas {
+        padding: 30px 20px;
+        background-color: #ececec;
+        padding-bottom: 50px;
+    }
+
+    .seccion-preguntas h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: black;
+
+    }
+
+    .pregunta {
+        max-width: 800px;
+        margin: 0 auto 25px;
+        padding: 20px;
+        border-left: 10px solid #072842;
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+
+    }
+
+    .pregunta h4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        color: #333;
+        cursor: pointer;
+
+    }
+
+    .pregunta h4 i {
+        transition: transform 0.3s ease;
+    }
+
+    .pregunta h4.activo i {
+        transform: rotate(180deg);
+    }
+
+    .pregunta p {
+        color: #555;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease;
+    }
+
+    .pregunta h4.activo + p {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .pie {
+        display: flex;
+        background-color: #ffffff;
+        gap:1%;
         margin-bottom: 0;
         padding-bottom: 2px;
         color: #000000;
