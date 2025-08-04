@@ -281,7 +281,7 @@
 
             <p>Para una atención más personalizada <br>
                contáctanos rellenando el siguiente formulario.</p>
-            <form class="formulario" action="/enviar" method="post">
+            <form id="form-contact" class="formulario">
 
                 <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
                 <br>
@@ -301,7 +301,8 @@
                 
                 <button type="submit">Quiero que me contacten</button>
 
-
+                <p id="status-msg"></p>
+                
             </form>
 
         </div>
