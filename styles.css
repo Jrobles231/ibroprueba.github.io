@@ -626,35 +626,37 @@ html {
 
     .pie {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 40px 420px 30px 380px;
-        color: #333;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #ffffff;
+        padding: 48px 100px;
+        gap: 210px;
+        color: #000000;
+        max-width: 1800px;
+        margin: 0 auto;
     }
 
-    .pie_logo {
-        list-style: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
+    .pie_logo,
+    .pie_lista,
     .pie_redes {
         list-style: none;
-        display: flex;
-        gap: 20px;
-        align-items: center;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 auto;
+        text-align: left;
+    }
+
+    .pie_logo li,
+    .pie_lista li,
+    .pie_redes li {
+        margin-bottom: 16px;
     }
 
     .pie_redes img {
-        width: 28px;
-        height: 28px;
-        transition: transform 0.3s ease;
-    }
-
-    .pie_redes img:hover {
-        transform: scale(1.2);
+        width: 40px;
+        vertical-align: middle;
+        margin-left: 14px;
     }
 }
 
@@ -1260,35 +1262,37 @@ html {
 
     .pie {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 40px 420px 30px 380px;
-        color: #333;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #ffffff;
+        padding: 40px 80px;
+        gap: 150px;
+        color: #000000;
+        max-width: 1600px;
+        margin: 20px auto;
     }
 
-    .pie_logo {
-        list-style: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
+    .pie_logo,
+    .pie_lista,
     .pie_redes {
         list-style: none;
-        display: flex;
-        gap: 20px;
-        align-items: center;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 auto;
+        text-align: left;
+    }
+
+    .pie_logo li,
+    .pie_lista li,
+    .pie_redes li {
+        margin-bottom: 14px;
     }
 
     .pie_redes img {
-        width: 28px;
-        height: 28px;
-        transition: transform 0.3s ease;
-    }
-
-    .pie_redes img:hover {
-        transform: scale(1.2);
+        width: 36px;
+        vertical-align: middle;
+        margin-left: 12px;
     }
 }
 
@@ -1903,35 +1907,35 @@ html {
 
     .pie {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 40px 220px 30px 180px;
-        color: #333;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-color: #ffffff;
+        padding: 32px 60px;
+        gap: 32px;
+        color: #000000;
     }
 
-    .pie_logo {
-        list-style: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
+    .pie_logo,
+    .pie_lista,
     .pie_redes {
         list-style: none;
-        display: flex;
-        gap: 20px;
-        align-items: center;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 auto;
+        text-align: left;
+    }
+
+    .pie_logo li,
+    .pie_lista li,
+    .pie_redes li {
+        margin-bottom: 12px;
     }
 
     .pie_redes img {
-        width: 28px;
-        height: 28px;
-        transition: transform 0.3s ease;
-    }
-
-    .pie_redes img:hover {
-        transform: scale(1.2);
+        width: 32px;
+        vertical-align: middle;
+        margin-left: 10px;
     }
 }
 
@@ -2580,35 +2584,38 @@ html {
 
     .pie {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 40px 70px 30px 70px;
-        color: #333;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #ffffff;
+        padding: 24px;
+        gap: 16px;
+        color: #000000;
+        flex-wrap: nowrap;
     }
 
-    .pie_logo {
-        list-style: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
+    .pie_logo,
+    .pie_lista,
     .pie_redes {
         list-style: none;
-        display: flex;
-        gap: 10px;
-        align-items: center;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 100px;
+        min-width: 100px;
+        max-width: 30%;
+        text-align: left;
+    }
+
+    .pie_logo li,
+    .pie_lista li,
+    .pie_redes li {
+        margin-bottom: 10px;
     }
 
     .pie_redes img {
-        width: 28px;
-        height: 28px;
-        transition: transform 0.3s ease;
-    }
-
-    .pie_redes img:hover {
-        transform: scale(1.2);
+        width: 24px;
+        vertical-align: middle;
+        margin-left: 6px;
     }
 }
 
@@ -3247,27 +3254,36 @@ html {
 
     .pie {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
         background-color: #ffffff;
-        gap:6%;
-        margin-left: 2%;
-        margin-bottom: 0;
-        padding-bottom: 2px;
+        padding: 16px;
+        gap: 16px;
         color: #000000;
+        flex-wrap: wrap;
     }
 
-    .pie_logo {
-        list-style: none;
-        margin-top: 8%;
-    }
-
+    .pie_logo,
+    .pie_lista,
     .pie_redes {
         list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 1 1 30%;
+        text-align: center;
+    }
 
-        
+    .pie_logo li,
+    .pie_lista li,
+    .pie_redes li {
+        margin-bottom: 8px;
     }
 
     .pie_redes img {
-        width: 8%;
+        width: 24px;
+        vertical-align: middle;
+        margin-left: 6px;
     }
 
 }
@@ -3906,26 +3922,32 @@ html {
 
     .pie {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: #ffffff;
-        gap:1%;
-        margin-bottom: 0;
-        padding-bottom: 2px;
+        padding: 16px;
+        gap: 16px;
         color: #000000;
     }
 
-    .pie_logo {
-        list-style: none;
-        margin-top: 8%;
-    }
-
+    .pie_logo,
+    .pie_lista,
     .pie_redes {
         list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 
-        
+    .pie_logo li,
+    .pie_lista li,
+    .pie_redes li {
+        margin-bottom: 8px;
     }
 
     .pie_redes img {
-        width: 8%;
+        width: 24px;
+        vertical-align: middle;
+        margin-left: 6px;
     }
-
 }
