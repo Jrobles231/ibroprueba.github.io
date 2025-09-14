@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(() => {
     indice = (indice + 1) % slides.length;
     mostrarSlide(indice);
-  }, 2000);
+  }, 5500);
 
 
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+//este código permite hacer funcionar el formulario, donde con fetch se conecta y se comunica con azure logic apps para mandar un correo
 
 
 document.getElementById("form-contact").addEventListener("submit", async function (e) {
