@@ -50,7 +50,7 @@ html {
         align-items: center;       
         justify-content: flex-start; 
         gap: 180px;                 
-        padding: 10px 5% 0% 26%;
+        padding: 10px 5% 0% 28%;
     }
 
 
@@ -709,7 +709,7 @@ html {
         align-items: center;       
         justify-content: flex-start; 
         gap: 180px;                 
-        padding: 10px 5% 0% 26%;
+        padding: 10px 5% 0% 23%;
     }
 
     .boton_contacta {
@@ -1359,7 +1359,7 @@ html {
         align-items: center;       
         justify-content: flex-start; 
         gap: 100px;                 
-        padding: 10px 5% 0% 22%;
+        padding: 10px 5% 0% 18%;
     }
 
 
@@ -1405,7 +1405,7 @@ html {
         cursor: pointer;
         padding: 10px;
         background: #ffffff;
-        padding-left: 88%;
+        padding-left: 80%;
         color:#151e29;
     }
     
@@ -2055,7 +2055,7 @@ html {
 
     .hamburger{
         display: flex;
-        font-size: 2rem;
+        font-size: 2.5rem;
         cursor: pointer;
         padding: 10px;
         background: #ffffff;
@@ -2089,7 +2089,7 @@ html {
 
     .logo-img1 {
         display: block;
-        height: 150px;  
+        height: 120px;  
         width: auto;
         padding-left: 70px;   
 
@@ -2754,8 +2754,8 @@ html {
         cursor: pointer;
         padding: 10px;
         background: #ffffff;
-        padding-left: 55%;
-        color:#151e29;
+        padding-left: 39%;
+        color:#272915;
     }
     
     .close {
@@ -3434,7 +3434,7 @@ html {
         cursor: pointer;
         padding: 10px;
         background: #ffffff;
-        padding-left: 57%;
+        padding-left: 45%;
         color:#151e29;
     }
     
